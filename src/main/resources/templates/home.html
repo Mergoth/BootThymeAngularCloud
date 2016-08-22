@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Message</h1>
+<div ng-show="authenticated">
+    <p>The ID is {{controller.message.id}}</p>
+    <p>The content is {{controller.message.content}}</p>
+</div>
+<div  ng-show="!authenticated">
+    <p>Login to see your message</p>
+</div>
+</body>
+</html>
