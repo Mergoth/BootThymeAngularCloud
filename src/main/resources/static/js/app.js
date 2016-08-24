@@ -41,7 +41,6 @@ angular.module('myModule', [ 'ngRoute' ])
                 });
             }
 
-            authenticate();
 
             self.credentials = {};
             self.login = function() {

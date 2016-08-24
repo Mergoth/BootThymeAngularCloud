@@ -8,6 +8,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+
 @SpringBootApplication
 public class BootThymeAngularCloudApplication {
 	@Configuration
@@ -19,7 +20,7 @@ public class BootThymeAngularCloudApplication {
 					.httpBasic()
 					.and()
 					.authorizeRequests()
-					.antMatchers("/index.html", "/home.html", "/login.html", "/").permitAll()
+					.antMatchers("/index.html","/resource","/user", "/login.html", "/bower_components/**","/home.html", "/").permitAll()
 					.anyRequest().authenticated();
 		}
 	}
